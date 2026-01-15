@@ -1,0 +1,64 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .modal label {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0;
+  }
+  
+  .email {
+    padding: 0.5rem;
+  }
+
+  .desc {
+    padding: 0.5rem;
+    height: 7rem;
+  }
+
+  .stars {
+    display: flex;
+    gap: 1rem;
+  }
+  .modalButtons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  .buttons {
+    background-color:rgb(1, 89, 139);
+    color: white;
+    padding: 0.5em;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  .cancel {
+    background-color: rgb(177, 37, 37);
+    color: white;
+    padding: 0.5em;
+    border-radius: 2rem;
+    cursor: pointer;
+  }

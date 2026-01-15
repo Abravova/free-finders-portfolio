@@ -1,0 +1,162 @@
+.container {
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+/* Main container for the banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 15em; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* Blurred background */
+.blurredBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: url("/src/components/seller.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(1em); /* Adjust blur intensity */
+  background-color: #000; /* Prevent white artifacts */
+  opacity: 6; /* Dim the blurred background slightly */
+}
+
+/* Centered main image */
+.centeredImage {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* User Info Section */
+.userInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 2em 2em rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: 0 0 3em 0;
+  padding: 3em 0;
+  gap: 1em;
+}
+
+.userInfo p {
+  margin-top: 1em;
+}
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+
+.profileImage {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userStats {
+  color: #555;
+}
+
+/* Contact Info */
+.contactInfo {
+  border-radius: 0.5em;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+/* Listings Section */
+.listings {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  gap: 1.5em;
+  margin-bottom: 2rem;
+}
+
+.listingsSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review-form {
+  background-color: white;
+  outline: 0.2rem solid rgb(1, 89, 139);
+  border-radius: 3rem;
+  padding: 0.2em 1rem;
+  cursor: pointer;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-evenly;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.h2Review {
+  text-align: center;
+}
+
+.review {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: space-around; /* Even spacing */
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.review h3 {
+  align-items: center;
+}
+.review p {
+  margin: 0; /* Remove default paragraph margin */
+  display: flex;
+  align-items: center; /* Ensures text inside is centered */
+  max-width: 60em;
+}
+
+@media screen and (max-width: 62rem) {
+  .userInfo {
+    flex-direction: column; /* Stack layout for small screens */
+  }
+  .userDetails {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .contactInfo h1 {
+    text-align: center;
+  }
+  .container {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 63rem) {
+  .listings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .listings {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

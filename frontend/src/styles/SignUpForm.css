@@ -1,0 +1,143 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the heading and form */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds space between the "Create an account" text and the form */
+  text-align: center; /* Center-align the text */
+}
+
+.input-container {
+  width: 100%;
+}
+
+/* Container for the password input and eye icon */
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Style the password input */
+.password-input-container input {
+  width: 100%;
+  padding-right: 40px; /* Add padding to the right to make space for the icon */
+}
+
+/* Style the eye icon button */
+.password-toggle-button {
+  position: absolute;
+  right: 10px; /* Adjust the position as needed */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black; /* Adjust the color as needed */
+  padding: 0;
+}
+svg {
+  color: black;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+}
+
+.input-container label {
+  color: #999;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 15px;
+  background: rgb(255, 255, 255);
+  padding: 0 5px;
+}
+
+.password-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.guideline {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.guideline-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.strength-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.strength-indicator {
+  height: 100%;
+  border-radius: 10px;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.strength-1 {
+  background-color: red;
+  width: 20%;
+}
+.strength-2 {
+  background-color: orange;
+  width: 40%;
+}
+.strength-3 {
+  background-color: yellow;
+  width: 60%;
+}
+.strength-4 {
+  background-color: lightgreen;
+  width: 80%;
+}
+.strength-5 {
+  background-color: green;
+  width: 100%;
+}
+
+.create-account-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}

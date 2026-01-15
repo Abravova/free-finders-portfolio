@@ -1,0 +1,101 @@
+/* Outer container */
+.how {
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 4rem;
+}
+
+/* Page title */
+.banner {
+  font-family: "Atma";
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 10rem 0;
+}
+.seller-details {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute space between items */
+  margin-bottom: 3rem; /* Adjust spacing as needed */
+}
+
+.seller-details-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.seller-details-text h2,
+.help h2,
+.buyer-details-text h2 {
+  font-size: 2rem; /* Adjusts text size */
+  margin: 1rem 0;
+}
+
+.seller-details-text p,
+.buyer-details-text p {
+  font-size: 1.3rem;
+}
+.seller-details-text ol,
+.buyer-details-text ol {
+  list-style: decimal; /* Ensures numbered list */
+  text-align: left; /* Align text to the left */
+  margin: 1rem auto; /* Centers the list with some spacing */
+  padding-left: 3rem;
+  font-size: 2rem;
+  /* Adds some indentation for better readability */
+}
+
+.seller-details-text ol li,
+.buyer-details-text li {
+  margin-bottom: 0.5rem; /* Adds spacing between list items */
+  font-size: 1.2rem; /* Adjusts text size for readability */
+}
+
+.seller-details img,
+.buyer-details img {
+  max-width: 25rem; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.buyer-details {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  margin-bottom: 3rem; /* Adjust spacing as needed */
+  /* Distribute space between items */
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.help p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.help-button {
+  color: white;
+  background-color: rgb(1, 89, 139);
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 1rem 0 0 0;
+  padding: 0.4rem 1rem;
+}
+
+@media screen and (max-width: 49rem) {
+  .seller-details,
+  .buyer-details {
+    flex-direction: column;
+  }
+
+  .seller-details-text h2,
+  .buyer-details-text h2 {
+    text-align: center;
+  }
+}

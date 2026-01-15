@@ -1,0 +1,27 @@
+{
+	"name": "freefinders",
+	"version": "1.0.0",
+	"description": "free stuff",
+	"homepage": "https://github.com/Abravova/FreeFinders#readme",
+	"bugs": {
+		"url": "https://github.com/Abravova/FreeFinders/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Abravova/FreeFinders.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"type": "module",
+	"scripts": {
+		"test": "echo test",
+		"cypress": "cypress open"
+	},
+	"workspaces": [
+		"frontend",
+		"backend"
+	],
+	"devDependencies": {
+		"cypress": "^14.1.0"
+	}
+}

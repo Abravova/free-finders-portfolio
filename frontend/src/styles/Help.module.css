@@ -1,0 +1,76 @@
+/* General Layout */
+.container {
+  display: flex; /* Flexbox to display elements next to each other */
+  gap: 2rem; /* Gap between the two sections */
+  justify-content: center;
+  align-items: center;
+}
+
+/* FAQ Section */
+.faqs {
+  display: flex;
+  flex-direction: column; /* Align items in column */
+  gap: 1rem; /* Space between FAQ items */
+  flex: 1; /* Take up available space */
+}
+
+.faqs h1 {
+  text-align: center;
+}
+.faqItem {
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Contact Form Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.contact form {
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%; /* Ensure inputs and textarea take full width */
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.submit {
+  background-color: rgb(1, 89, 139);
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.statusMessage {
+  margin-top: 0.5rem;
+  color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 49rem) {
+  .container {
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .faqs {
+    text-align: center;
+  }
+}

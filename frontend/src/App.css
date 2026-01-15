@@ -1,0 +1,47 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+/* Body container */
+main {
+  font-family: Arial, sans-serif;
+  margin: 1rem 3rem;
+  min-height: 70vh;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  color: aqua;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media screen and (max-width: 62rem) {
+  main {
+    margin: 0;
+  }
+}

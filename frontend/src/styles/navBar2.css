@@ -1,0 +1,55 @@
+/* Modify the existing CSS to make the header items align properly */
+
+/* Header container to align elements horizontally */
+.container2 {
+  display: flex;
+  justify-content: space-between; /* This spaces out the left and right sections */
+  align-items: center; /* Vertically centers the items */
+  max-width: 1350px; /* Consistent maximum width for both sections */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0 20px; /* Add horizontal padding inside the container */
+}
+
+/* Header left section (FreeFinders) */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Header right section (Login) */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Ensures login container is pushed to the right */
+}
+
+/* Login container styles */
+.login-container {
+  display: flex;
+  align-items: center;
+}
+
+.login-container span {
+  margin-right: 5px; /* Adjust the spacing between the text and the link */
+}
+
+.log-in {
+  text-decoration: none;
+  color: #007bff; /* Style the log-in link color */
+}
+
+.log-in:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 49rem) {
+  /* For smaller screens, stack the header items vertically */
+  .container2 {
+    flex-direction: column;
+    gap: 10px; /* Add space between the sections */
+  }
+
+  .header-right {
+    justify-content: center; /* Center login container for small screens */
+  }
+}

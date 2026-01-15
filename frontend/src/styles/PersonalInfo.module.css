@@ -1,0 +1,61 @@
+.pageTitle {
+  padding-bottom: 10px;
+}
+.textBox {
+  background-color: #dadada;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 5px;
+  min-width: 90%;
+}
+
+.infoContainer {
+  width: 400px;
+}
+
+.infoComponent {
+  padding: 10px 0px;
+}
+
+.infoTitle {
+  font-size: 1.3em;
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+
+.infoText {
+  padding-left: 10px;
+}
+
+.textComponent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.editIcon {
+  padding-left: 10px;
+}
+
+.page {
+  padding-left: 10px;
+}
+
+.images img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.images input {
+  margin-bottom: 15px;
+}
+
+.images button {
+  margin-bottom: 15px;
+}

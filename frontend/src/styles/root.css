@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the grid */
+.root-main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem 0; /* Space between grid items */
+  justify-items: center;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 63rem) {
+  .root-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .root-main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.search-error {
+  text-align: center;
+}

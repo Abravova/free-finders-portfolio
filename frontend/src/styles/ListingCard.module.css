@@ -1,0 +1,46 @@
+/* Individual item container */
+.item {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center align contents */
+  text-align: center;
+  height: 23rem;
+  width: 22rem;
+  background-color: #fff; /* White background for each item */
+  border: 0.1em solid #ddd; /* Light border for separation */
+  border-radius: 2rem; /* Rounded corners */
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1rem;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for each item */
+.item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.item-img {
+  width: 100%; /* Full container width */
+  height: 15rem;
+  object-fit: contain; /* Fit image inside container without cropping */
+  border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+  margin-bottom: 1rem;
+}
+
+.item-title {
+  font-weight: bold;
+  margin: 10px 0 5px; /* Margin between title and location */
+  font-size: 1rem;
+}
+
+.item-location,
+.item-time {
+  font-size: 0.9rem; /* Smaller text for details */
+  color: #555; /* Slightly muted text color */
+}
+
+@media (max-width: 49rem) {
+  .item {
+    padding: 0; /* Full width on smaller screens */
+  }
+}

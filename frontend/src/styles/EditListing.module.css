@@ -1,0 +1,7 @@
+/* adds blue dot to the right of element */
+.edited::after {
+  position: absolute;
+  content: "•";
+  color: rgb(1, 89, 139);
+  margin-left: 0.5rem;
+}
