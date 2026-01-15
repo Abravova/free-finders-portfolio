@@ -8,6 +8,7 @@ Style Guide: <https://airbnb.io/javascript/react>
 
 ### Screenshots
 
+<img width="867" height="422" alt="image" src="https://github.com/user-attachments/assets/d77a04b3-7925-4f02-b19c-a379a389a9f8" />
 
 ### Model Unit Tests
 
