@@ -7,6 +7,9 @@ Recommended VSCode Plugins: [Prettier](https://marketplace.visualstudio.com/item
 Style Guide: <https://airbnb.io/javascript/react>
 
 ### Screenshots
+<img width="1147" height="656" alt="Class_Diagram" src="https://github.com/user-attachments/assets/4c0c9109-6aee-4d9c-a6ff-d78edccee124" />
+
+<img width="1158" height="670" alt="signup_workflow" src="https://github.com/user-attachments/assets/21f8d79f-63fa-4e96-911a-62f4d64f3df1" />
 
 <img width="867" height="422" alt="image" src="https://github.com/user-attachments/assets/d77a04b3-7925-4f02-b19c-a379a389a9f8" />
 
